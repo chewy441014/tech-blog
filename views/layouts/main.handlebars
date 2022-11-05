@@ -1,21 +1,30 @@
 <head>
   <meta charset="UTF-8">
-  <title>Potluck Party</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>The Tech Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        &#127881 The Tech Blog &#127881
-      </h1>
-    </header>
-      <main class="container container-fluid mt-5">
-        {{{ body }}}
-      </main>
-  </div>
-  </body>
-
+  <header>
+    <h1>The Tech Blog</h1>
+  </header>
+  <nav>
+    <ul>
+      <a href="/">Home</a>
+      <a href="/">Dashboard</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
+    </ul>
+  </nav>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
