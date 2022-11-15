@@ -1,25 +1,21 @@
-/*
-const Reader = require('./Reader');
-const Book = require('./Book');
-const LibraryCard = require('./LibraryCard');
+const Comment = require('./Comment');
+const Post = require('./Post');
+const User = require('./User');
 
-Reader.hasOne(LibraryCard, {
-  foreignKey: 'reader_id',
-  onDelete: 'CASCADE',
+// Comments and Posts belong to user
+
+Post.belongsTo(User, {
+  foreignKey: 'userId'
 });
 
-Reader.hasMany(Book, {
-  foreignKey: 'reader_id',
-  onDelete: 'CASCADE',
+Comment.belongsTo(User, {
+  foreignKey: 'userId'
 });
 
-Book.belongsTo(Reader, {
-  foreignKey: 'reader_id',
+// Posts have many comments
+
+Post.hasMany(Comment, {
+  foreignKey: 'postId'
 });
 
-LibraryCard.belongsTo(Reader, {
-  foreignKey: 'reader_id',
-});
-
-module.exports = { Reader, Book, LibraryCard };
-*/
+module.exports = {Comment, Post, User};

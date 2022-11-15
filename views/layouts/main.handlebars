@@ -1,30 +1,31 @@
 <head>
   <meta charset="UTF-8">
   <title>The Tech Blog</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>The Tech Blog</h1>
-  </header>
-  <nav>
-    <ul>
-      <a href="/">Home</a>
-      <a href="/">Dashboard</a>
-      {{#if loggedIn}}
-      <button id="logout" class="btn-no-style">Logout</button>
-      {{else}}
-      <a href="/login">Login</a>
-      {{/if}}
-    </ul>
-  </nav>
+  <div class="custom-jumbo">
+        <header class="container container-fluid pt-5">
+            <h1>The Tech Blog</h1>
+        </header>
+        <nav class="container container-fluid mt-4 pb-2">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            {{#if loggedIn}}
+            <a id="logout" class="badBootStrap">Logout</a>
+            {{else}}
+            <a href="/login">Log In</a>
+            {{/if}}
+        </nav>
+    </div>
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

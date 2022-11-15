@@ -1,0 +1,11 @@
+{{!-- display all user posts on the dashboard page --}}
+{{#each posts}}
+<div class="card m-2">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{text}}</p>
+        <a role="button" class="btn btn-primary" href="/dashboard/edit-post/{{id}}">Edit Post</a>
+    </div>
+</div>
+{{/each}}
+<a role="button" class="btn btn-primary" href="/dashboard/new-post">Add new post</a>
