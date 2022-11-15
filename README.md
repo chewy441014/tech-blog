@@ -1,5 +1,5 @@
 # Tech Blog
-### An full stack web app which allows users to communicate in a blog like format. Hosted on Heroku. 
+### A full stack web app which allows users to communicate in a blog like format. Hosted on Heroku. 
 
 ## Usage
 ---
