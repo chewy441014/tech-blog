@@ -7,10 +7,6 @@ To use this blog, simply navigate to the [demo site](https://tech-blog-preston.h
 
 ![tech blog screenshot](https://user-images.githubusercontent.com/6627972/201821038-46965f5d-dbdb-4825-bce9-d8a67f49159e.png)
 
-## Installation
----
-N/A
-
  ## Languages and Technologies used
  ---
 
