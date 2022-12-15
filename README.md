@@ -1,5 +1,5 @@
 # Tech Blog
-A full stack web app which allows users to communicate in a blog like format. Hosted on Heroku. The tech blog utilizes MVC (Model, View, Controller), to structure the development files. 
+A full stack web app which allows users to communicate in a blog like format. Hosted on Heroku. The tech blog utilizes MVC (Model, View, Controller), to structure the development files. It also integrates a hosted database to store users, posts, and comments using MySQL and JawsDB hosting service. 
 
 ## Usage
 To use this blog, simply navigate to the [demo site](https://tech-blog-preston.herokuapp.com/). Once there you can create an account by clicking 'Signup'. After signing in you can create posts from your dashboard, comment on other's posts, and edit your posts. 
